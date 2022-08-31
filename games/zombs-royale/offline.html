@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en-au">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<!-- Import metas for WPA -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#000000">
+
+	<title>Progressive Web App Template</title>
+
+	<!-- Link manifest file -->
+	<link rel="manifest" href="manifest.webmanifest" />
+
+	<!-- Register Service Worker -->
+	<script type="text/javascript" src="register-sw.js"></script>
+</head>
+
+<body>
+	<!-- Some random content -->
+	<h1>Progressive Web App Template!</h1>
+	<button onclick="randomFunction();">Random button</button>
+</body>
+
+<!-- A JS file (in the offline version it's better to put everything possible, directly into the HTML file) -->
+<script type="text/javascript">
+	function randomFunction() {
+		window.alert("Hi, " + window.prompt("Enter your name:") + "!");
+	}
+</script>
+
+</html>
